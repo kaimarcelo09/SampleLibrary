@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: rgb(31, 14, 126);
+    background-color: pink;
 }
 .book-container {
     display: flex;
