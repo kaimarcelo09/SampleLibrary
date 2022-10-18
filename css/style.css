@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+}
+.book-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    flex-wrap: wrap;
+}
+.book-container .card {
+    background-color: rgb(161, 161, 161);
+    width: 250px;
+    height: auto;
+    margin: 20px 10px;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+}
+.book-cover {
+    width: 100%;
+    height: 410px;
+    border-radius: 20px 20px 0 0;
+}
+.book-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+.book-info p {
+    padding: 0 10px;
+    text-align: center;
+}
+.book-info .read-more {
+    display: none;
+}
+.buttons {
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+.btn-cart {
+    background-color: rgb(240, 240, 240);
+    color: rgb(74, 28, 148);
+    text-decoration: none;
+    flex: 2;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 20px;
+}
+.btn-wishlist {
+    background-color: rgb(240, 240, 240);
+    color: rgb(74, 28, 148);
+    text-decoration: none;
+    flex: 2;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-buy {
+    background-color: rgb(74, 28, 148);
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 20px 0;
+}
+.buttons i {
+    font-size: large;
+    margin-bottom: 5px;
+}
+@media (max-width: 540px) {
+    body {
+        background-color: rgb(48, 48, 48);
+        font-size: smaller;
+    }
+    .book-container {
+        flex-direction: column;
+        align-items: center;
+        /* font-size: 14px; */
+    }
+    .book-container .card {
+        flex-direction: row;
+        height: auto;
+        width: 90%;
+    }
+    .book-cover {
+        height: auto;
+        width: 150px;
+        border-radius: 20px 0 0 20px;
+    }
+    .book-info {
+        background-color: rgb(161, 161, 161);
+        border-radius: 0 20px 20px 0;
+        flex: 1;
+    }
+    .book-info span {
+        display: none;
+    }
+    .btn-cart {
+        border-radius: 0;
+    }
+    .book-info .read-more {
+        display: block;
+    }
+}
